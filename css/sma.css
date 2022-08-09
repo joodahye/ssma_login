@@ -6,7 +6,8 @@
 }
 html, body {
 	scroll-behavior: smooth;
-	font: 10pt/100% 'Noto Sans KR', sans-serif;background:black;
+	font: 10pt/100% 'Noto Sans KR', sans-serif;
+	background:black;
 }
 a {
 	text-decoration: none;
@@ -22,6 +23,7 @@ img {
 	position: relative;
 	color: white;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 /*블랙배경 인트로*/
@@ -43,14 +45,18 @@ img {
 }
 #blackbg > img {
 	position: absolute;
-	width: 90vw;
-	left: 5vw;
+	max-width: 500px;
+	width: 100vw;
+	margin: auto;
 	top: 25%;
 }
 
 /*메인*/
 main{
 	opacity: 1;
+	max-width:500px;
+	width: 80vw;
+	margin: auto;
 	animation: main 1s 3s both;
 }
 @keyframes main {
@@ -62,30 +68,25 @@ main{
 	}
 }
 main > img {
+	max-width:500px;
 	width: 80%;
 	margin: auto;
 	margin-top: 10vh;
 }
 #email {
 	font-size: 2rem;
-	margin-top: 3vh;
-	text-align: center;
-}
-#email label {
-	margin-left: 10vw;
 }
 #email input {
-	width:5 0vw;
+	width: 47vw;
 	background: transparent;
 	border-bottom: 1px solid white;
 }
 #password  {
 	font-size: 2rem;
-	margin-top: 3vh;
-	text-align: center;
+	margin-top:40px;
 }
 #password input {
-	width: 50vw;
+	width: 40vw;
 	background: transparent;
 	border-bottom: 1px solid white;
 }
